@@ -1,6 +1,8 @@
 package org.animals.java;
 
-public class Eagle  extends Animal{
+import interf.Flying;
+
+public class Eagle  extends Animal implements Flying{
 private int eggDimension;
 	
 	public Eagle(String name, String animalCall, String alimentation, boolean sleep, int eggDimension) {
@@ -34,6 +36,13 @@ private int eggDimension;
 		}else {
 			return "l'animale è sveglio";
 		}
+	}
+	
+	@Override
+	public void fly() {
+
+		System.out.println("Sono " + getName() + ", Sto volando");
+		
 	}
 
 }

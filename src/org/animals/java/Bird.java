@@ -1,6 +1,8 @@
 package org.animals.java;
 
-public class Bird extends Animal{
+import interf.Flying;
+
+public class Bird extends Animal implements Flying{
 
 	private int eggDimension;
 	
@@ -35,6 +37,13 @@ public class Bird extends Animal{
 		}else {
 			return "l'animale è sveglio";
 		}
+	}
+	
+	@Override
+	public void fly() {
+
+		System.out.println("Sono " + getName() + ", Sto volando");
+		
 	}
 
 }

@@ -1,6 +1,8 @@
 package org.animals.java;
 
-public class Dolphin extends Animal{
+import interf.Swimming;
+
+public class Dolphin extends Animal implements Swimming{
 private String species;
 	
 	public Dolphin(String name, String animalCall, String alimentation,boolean sleep ,String species) {
@@ -35,6 +37,12 @@ private String species;
 		}else {
 			return "l'animale è sveglio";
 		}
-		
 	}
+		
+		@Override
+		public void swim() {
+			System.out.println("Sono " + getName() + ", Sto nuotando");
+			
+		
+		}
 }

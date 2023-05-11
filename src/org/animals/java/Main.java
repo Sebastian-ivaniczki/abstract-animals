@@ -20,8 +20,13 @@ public class Main {
 			 eat = animal.eat();
 			 
 			 System.out.println(call+ sleep + eat);
-			 
+			 System.out.println("-------------------------------");
 		}
+		System.out.println("-------------------------------");
+		AnimaleManager.faiVolare(b1);
+		AnimaleManager.faiVolare(e1);
+		AnimaleManager.faiNuotare(de1);
+		AnimaleManager.faiNuotare(d1);
 	
 	}
 }
